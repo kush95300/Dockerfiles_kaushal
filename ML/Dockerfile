@@ -8,10 +8,10 @@ MAINTAINER kaushal soni <kaushal95300@gmail.com>
 RUN apt-get update
 
 # for sudo or root access
-RUN apt-get install sudo
+RUN apt-get install sudo 
 
-# Basic CNN packages
+# pip update
+RUN python3 -m pip install --upgrade pip
+
+# Basic ML packages
 RUN sudo pip3 install pandas joblib torch numpy scikit-learn
-
-# Echo message  ML Environment Created
-CMD echo "Machine Learning Environment Created"
