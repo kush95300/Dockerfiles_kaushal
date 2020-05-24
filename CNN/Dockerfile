@@ -8,10 +8,10 @@ MAINTAINER kaushal soni <kaushal95300@gmail.com>
 RUN apt-get update
 
 # for sudo or root access
-RUN apt-get install sudo
+RUN apt-get install sudo 
+
+# pip update
+RUN python3 -m pip install --upgrade pip
 
 # Basic CNN packages
-RUN sudo pip3 install keras numpy pillow scikit-learn pandas joblib 
-
-# Echo message
-CMD echo "Environment Created"
+RUN sudo pip3 install keras numpy pillow scikit-learn pandas joblib  
