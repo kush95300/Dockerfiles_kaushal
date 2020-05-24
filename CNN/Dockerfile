@@ -11,7 +11,7 @@ RUN apt-get update
 RUN apt-get install sudo
 
 # Basic CNN packages
-RUN sudo pip3 install keras numpy pillow scikit-learn pandas joblib torch 
+RUN sudo pip3 install keras numpy pillow scikit-learn pandas joblib 
 
 # Echo message
 CMD echo "Environment Created"
